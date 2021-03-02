@@ -17,20 +17,20 @@
 ### 5. Create SSH config
  - In git bach `touch ~/.ssh/config`
  - Open it with editor and paste:
-         `
-          Host github.com
-             HostName github.com
-             User git
-             PreferredAuthentications publickey
-             IdentityFile ~/.ssh/id_rsa #Here you have to enter your default SSH key that you are going to use for github
-             AddKeysToAgent yes
-           # Copy the following lines as many times you like, make sure you change the key and the host if needed
-           Host github-YOUR_ACCOUNT_NAME
-             HostName github.com
-             User git
-             PreferredAuthentications publickey
-             IdentityFile ~/.ssh/id_rsa_YOUR_NEW_KEY #The key you have just created
-             AddKeysToAgent yes
+`
+Host github.com
+HostName github.com
+User git
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+AddKeysToAgent yes
+
+Host github-1000p
+HostName github.com
+User git
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_1000p
+AddKeysToAgent yes
 `
  - Be sure to remove the comments from the above
 ### 5. To add remote or clone a repository use:
