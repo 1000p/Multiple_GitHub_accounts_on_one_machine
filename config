@@ -1,0 +1,13 @@
+Host github.com
+HostName github.com
+User git
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+AddKeysToAgent yes
+
+Host github-YOUR_ACCOUNT_NAME
+User git
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_YOUR_NEW_KEY
+HostName github.com
+AddKeysToAgent yes
