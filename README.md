@@ -17,7 +17,8 @@
 ### 5. Create SSH config
  - In git bach `touch ~/.ssh/config`
  - Open it with editor and paste:
-       `   Host github.com
+`
+          Host github.com
              HostName github.com
              User git
              PreferredAuthentications publickey
@@ -29,7 +30,8 @@
              User git
              PreferredAuthentications publickey
              IdentityFile ~/.ssh/id_rsa_YOUR_NEW_KEY #The key you have just created
-             AddKeysToAgent yes`
+             AddKeysToAgent yes
+             `
  - Be sure to remove the comments from the above
 ### 5. To add remote or clone a repository use:
  - `git remote add origin git@github-YOUR_ACCOUNT_NAME:Git_Hub_Account/repository.git` *Be careful!* `git@github.com:Git_Hub_Account/repository.git` is the default address given by git when you create your repository. You have to change that with the host you have provided e.g : `git@github-YOUR_ACCOUNT_NAME:Git_Hub_Account/repository.git`
