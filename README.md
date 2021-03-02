@@ -19,18 +19,18 @@
  - Open it with editor and paste:
 ```sh
 Host github.com
-HostName github.com
-User git
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/id_rsa
-AddKeysToAgent yes
-
-Host github-1000p
-HostName github.com
-User git
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/id_rsa_1000p
-AddKeysToAgent yes
+ HostName github.com
+ User git
+ PreferredAuthentications publickey
+ IdentityFile ~/.ssh/id_rsa #Here you have to enter your default SSH key that you are going to use for github
+ AddKeysToAgent yes
+ # Copy the following lines as many times you like, make sure you change the key and the host if needed
+ Host github-YOUR_ACCOUNT_NAME
+   HostName github.com
+   User git
+   PreferredAuthentications publickey
+   IdentityFile ~/.ssh/id_rsa_YOUR_NEW_KEY #The key you have just created
+   AddKeysToAgent yes
 
 ```
  - Be sure to remove the comments from the above
@@ -42,7 +42,7 @@ AddKeysToAgent yes
 ### 1. Create a .bashrc if you do not have one
  - in git bash `nano ~/.bashrc`
  - Write and save the following:
-        `
+```sh
         # Set up ssh-agent
         SSH_ENV="$HOME/.ssh/environment"
         
@@ -64,4 +64,4 @@ AddKeysToAgent yes
         else
             start_agent
         fi
-`
+```
