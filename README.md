@@ -17,7 +17,7 @@
 ### 5. Create SSH config
  - In git bach `touch ~/.ssh/config`
  - Open it with editor and paste:
-`
+         `
           Host github.com
              HostName github.com
              User git
