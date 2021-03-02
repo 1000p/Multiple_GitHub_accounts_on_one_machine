@@ -32,7 +32,7 @@
              AddKeysToAgent yes`
  - Be sure to remove the comments from the above
 ### 5. To add remote or clone a repository use:
- - `git remote add origin git@github-YOUR_ACCOUNT_NAME:Git_Hub_Account/repository.git` ### Be careful! `git@github.com:Git_Hub_Account/repository.git` is the default address given by git when you create your repository. You have to change that with the host you have provided e.g : `git@github-YOUR_ACCOUNT_NAME:Git_Hub_Account/repository.git`
+ - `git remote add origin git@github-YOUR_ACCOUNT_NAME:Git_Hub_Account/repository.git` *Be careful!* `git@github.com:Git_Hub_Account/repository.git` is the default address given by git when you create your repository. You have to change that with the host you have provided e.g : `git@github-YOUR_ACCOUNT_NAME:Git_Hub_Account/repository.git`
  - `git clone git@github-YOUR_ACCOUNT_NAME:Git_Hub_Account/repository.git`
 
 ## If you don't want to be prompted everytime you try to reach the remote for a SSH passphrase you can do the following:
